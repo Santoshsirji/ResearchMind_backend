@@ -45,6 +45,10 @@ async def query_endpoint(body: QueryRequest):
     result = query_rag(body.question, user_id=body.user_id, doc_id=body.doc_id)
     return result
 
+@app.get("/")
+def root():
+    return {"service": "ResearchMind API", "status": "ok", "docs": "/docs"}
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
