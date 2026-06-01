@@ -42,6 +42,7 @@ mdurl==0.1.2
 msgspec==0.21.1
 multidict==6.7.1
 numpy==2.4.6
+openai==2.38.0
 orjson==3.11.9
 packaging==26.2
 pdfminer.six==20251230
